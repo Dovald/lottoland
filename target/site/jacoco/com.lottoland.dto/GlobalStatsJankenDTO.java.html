@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GlobalStatsJankenDTO.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lottoland</a> &gt; <a href="index.source.html" class="el_package">com.lottoland.dto</a> &gt; <span class="el_source">GlobalStatsJankenDTO.java</span></div><h1>GlobalStatsJankenDTO.java</h1><pre class="source lang-java linenums">package com.lottoland.dto;
+
+import java.util.Objects;
+
+import org.springframework.validation.annotation.Validated;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+
+/**
+ * GlobalStatsJankenDTO
+ */
+@Validated
+@javax.annotation.Generated(value = &quot;io.swagger.codegen.v3.generators.java.SpringCodegen&quot;, date = &quot;2023-07-07T21:47:33.711908+02:00[Europe/Madrid]&quot;)
+
+
+<span class="fc" id="L18">public class GlobalStatsJankenDTO   {</span>
+<span class="fc" id="L19">  @JsonProperty(&quot;TotalRounds&quot;)</span>
+  private Long totalRounds = null;
+
+<span class="fc" id="L22">  @JsonProperty(&quot;TotalP1Wins&quot;)</span>
+  private Long totalP1Wins = null;
+
+<span class="fc" id="L25">  @JsonProperty(&quot;TotalP2Wins&quot;)</span>
+  private Long totalP2Wins = null;
+
+<span class="fc" id="L28">  @JsonProperty(&quot;TotalTies&quot;)</span>
+  private Long totalTies = null;
+
+  public GlobalStatsJankenDTO totalRounds(Long totalRounds) {
+<span class="nc" id="L32">    this.totalRounds = totalRounds;</span>
+<span class="nc" id="L33">    return this;</span>
+  }
+
+  /**
+   * Get totalRounds
+   * @return totalRounds
+   **/
+  @Schema(example = &quot;250&quot;, description = &quot;&quot;)
+  
+    public Long getTotalRounds() {
+<span class="fc" id="L43">    return totalRounds;</span>
+  }
+
+  public void setTotalRounds(Long totalRounds) {
+<span class="fc" id="L47">    this.totalRounds = totalRounds;</span>
+<span class="fc" id="L48">  }</span>
+
+  public GlobalStatsJankenDTO totalP1Wins(Long totalP1Wins) {
+<span class="nc" id="L51">    this.totalP1Wins = totalP1Wins;</span>
+<span class="nc" id="L52">    return this;</span>
+  }
+
+  /**
+   * Get totalP1Wins
+   * @return totalP1Wins
+   **/
+  @Schema(example = &quot;100&quot;, description = &quot;&quot;)
+  
+    public Long getTotalP1Wins() {
+<span class="fc" id="L62">    return totalP1Wins;</span>
+  }
+
+  public void setTotalP1Wins(Long totalP1Wins) {
+<span class="fc" id="L66">    this.totalP1Wins = totalP1Wins;</span>
+<span class="fc" id="L67">  }</span>
+
+  public GlobalStatsJankenDTO totalP2Wins(Long totalP2Wins) {
+<span class="nc" id="L70">    this.totalP2Wins = totalP2Wins;</span>
+<span class="nc" id="L71">    return this;</span>
+  }
+
+  /**
+   * Get totalP2Wins
+   * @return totalP2Wins
+   **/
+  @Schema(example = &quot;80&quot;, description = &quot;&quot;)
+  
+    public Long getTotalP2Wins() {
+<span class="fc" id="L81">    return totalP2Wins;</span>
+  }
+
+  public void setTotalP2Wins(Long totalP2Wins) {
+<span class="fc" id="L85">    this.totalP2Wins = totalP2Wins;</span>
+<span class="fc" id="L86">  }</span>
+
+  public GlobalStatsJankenDTO totalTies(Long totalTies) {
+<span class="nc" id="L89">    this.totalTies = totalTies;</span>
+<span class="nc" id="L90">    return this;</span>
+  }
+
+  /**
+   * Get totalTies
+   * @return totalTies
+   **/
+  @Schema(example = &quot;70&quot;, description = &quot;&quot;)
+  
+    public Long getTotalTies() {
+<span class="fc" id="L100">    return totalTies;</span>
+  }
+
+  public void setTotalTies(Long totalTies) {
+<span class="fc" id="L104">    this.totalTies = totalTies;</span>
+<span class="fc" id="L105">  }</span>
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+<span class="fc bfc" id="L110" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L111">      return true;</span>
+    }
+<span class="fc bfc" id="L113" title="All 4 branches covered.">    if (o == null || getClass() != o.getClass()) {</span>
+<span class="fc" id="L114">      return false;</span>
+    }
+<span class="fc" id="L116">    GlobalStatsJankenDTO globalStatsJankenDTO = (GlobalStatsJankenDTO) o;</span>
+<span class="fc bfc" id="L117" title="All 2 branches covered.">    return Objects.equals(this.totalRounds, globalStatsJankenDTO.totalRounds) &amp;&amp;</span>
+<span class="fc bfc" id="L118" title="All 2 branches covered.">        Objects.equals(this.totalP1Wins, globalStatsJankenDTO.totalP1Wins) &amp;&amp;</span>
+<span class="fc bfc" id="L119" title="All 2 branches covered.">        Objects.equals(this.totalP2Wins, globalStatsJankenDTO.totalP2Wins) &amp;&amp;</span>
+<span class="fc bfc" id="L120" title="All 2 branches covered.">        Objects.equals(this.totalTies, globalStatsJankenDTO.totalTies);</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L125">    return Objects.hash(totalRounds, totalP1Wins, totalP2Wins, totalTies);</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L130">    StringBuilder sb = new StringBuilder();</span>
+<span class="fc" id="L131">    sb.append(&quot;class GlobalStatsJankenDTO {\n&quot;);</span>
+    
+<span class="fc" id="L133">    sb.append(&quot;    totalRounds: &quot;).append(toIndentedString(totalRounds)).append(&quot;\n&quot;);</span>
+<span class="fc" id="L134">    sb.append(&quot;    totalP1Wins: &quot;).append(toIndentedString(totalP1Wins)).append(&quot;\n&quot;);</span>
+<span class="fc" id="L135">    sb.append(&quot;    totalP2Wins: &quot;).append(toIndentedString(totalP2Wins)).append(&quot;\n&quot;);</span>
+<span class="fc" id="L136">    sb.append(&quot;    totalTies: &quot;).append(toIndentedString(totalTies)).append(&quot;\n&quot;);</span>
+<span class="fc" id="L137">    sb.append(&quot;}&quot;);</span>
+<span class="fc" id="L138">    return sb.toString();</span>
+  }
+
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(java.lang.Object o) {
+<span class="fc bfc" id="L146" title="All 2 branches covered.">    if (o == null) {</span>
+<span class="fc" id="L147">      return &quot;null&quot;;</span>
+    }
+<span class="fc" id="L149">    return o.toString().replace(&quot;\n&quot;, &quot;\n    &quot;);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

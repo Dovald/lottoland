@@ -1,0 +1,14 @@
+services:
+  kafka:
+    image: landoop/fast-data-dev:latest
+    network_mode: "host"
+  angular:
+    build: ./angular/
+    network_mode: "host"
+    depends_on:
+           - "kafka"
+  spring:
+    build: ./spring/
+    network_mode: "host"
+    depends_on:
+      - "angular"

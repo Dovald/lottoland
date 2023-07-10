@@ -1,0 +1,24 @@
+<h3>Janken games played by you this session: {{statsJanken.rounds.length}}</h3>
+<table class="table table-striped">
+	<thead class="table-dark">
+		<tr>
+			<th>Player 1</th>
+			<th>Player 2</th>
+			<th>Result</th>
+			<th>Played at</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor = "let statJanken of statsJanken?.rounds">
+			<td>{{statJanken.player1}}</td>
+			<td>{{statJanken.player2}}</td>
+			<td>{{statJanken.result}}</td>
+			<td>{{statJanken.playedAt}}</td>
+		</tr>
+	</tbody>
+</table>
+<div>
+	<button (click)="playJanken()" class="btn btn-success">Play</button>
+	&nbsp;
+	<button (click)="resetSession()"class="btn btn-danger">Reset</button>
+</div>
