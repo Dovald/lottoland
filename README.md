@@ -24,18 +24,27 @@ Los detalles y el enunciado de la prueba se pueden encontrar en *lottoland/src/m
 ## Explicación de la interfaz
 
 La aplicación está escuchando en el puerto 80 así que al acceder nos redirigirá automáticamente a la ventana del juego.
+
 Hay una barra de navegación en la parte superior de la pantalla donde se podrá alternar entre las dos vistas. (Janken Game y Global Stats)
+
 En Janken Game dispondremos de un contador que mostrará el numero de partidas jugadas por ese usuario en esa sesión de juego.
+
 Una tabla con los resultados de las partidas jugadas durante la sesión de juego, las jugadas están ordenadas de arriba a abajo por antigüedad.
+
 Un botón para realizar una partida.
+
 Un botón para reiniciar la sesión de juego.
+
 Cuando se reinicia la sesión de juego el contador pasará a valer 0 y se borraran todos los registros de la tabla.
+
 En Global Stats tendremos una ventana donde se mostrarán las estadísticas globales del juego Janken realizadas por todos los usuarios desde el arranque de la aplicación.
 
 ## Estructura de ficheros de la prueba técnica
 
 En la raíz de la carpeta *lottoland* tendremos el archivo *pom.xml* y las carpetas *src* y *target* correspondientes al proyecto maven para la parte del back-end
+
 En la carpeta *lottoland/lottoland-frontend* tendremos el proyecto de Angular utilizado para la parte del front-end
+
 En la carpeta *lottoland/compose* se encuentran los Dockerfile, el *docker-compose.yml* y los proyectos empaquetados de la parte back y front para su despliegue
 
 ## Comandos
